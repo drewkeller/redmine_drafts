@@ -23,7 +23,7 @@ class DraftsController < ApplicationController
       when 'issue'
         new_content = get_issue_content
       when 'wiki'
-        newcontent = get_wiki_content
+        new_content = get_wiki_content
       when 'news'
         new_content = get_news_content
       end
