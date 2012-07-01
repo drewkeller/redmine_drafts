@@ -50,6 +50,7 @@ class WikiController
         @content.comments = @draft.content[:content][:comments]
         # To prevent StaleObjectError exception when reverting to a previous version
         @content.version = @page.content.version
+        @text = @content.text
       else
         #find_wiki
         old_edit.bind(self).call
